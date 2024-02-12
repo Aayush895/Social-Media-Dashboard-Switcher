@@ -5,43 +5,104 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <main>
+    <div id="media-container">
+      <header>
+        <div id="header-content">
+          <h1>Social Media Dashboard</h1>
+          <p>Total Followers: 23,004</p>
+        </div>
+        <div id="toggle-btn">
+          <button>Toggle</button>
+        </div>
+      </header>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+      <div id="followers-container">
 
-  Dark Mode
+        <div id="fb-follower">
+          <div class="socials">
+            <div class="account">
+              <img src="/images/icon-facebook.svg" alt="">
+              <p>@nathanf</p>
+            </div>
+            <div class="followers">
+              <h1>1987</h1>
+              <p>Followers</p>
+            </div>
+            
+            <div class="follower-increment">
+              <img src="/images/icon-up.svg" alt="up">
+              <p>12 Today</p>
+            </div>
+          </div>
+        </div>
 
-  
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+        <div id="x-follower">
+          <div class="socials">
+            <div class="account">
+              <img src="/images/icon-twitter.svg" alt="">
+              <p>@nathanf</p>
+            </div>
+            <div class="followers">
+              <h1>1044</h1>
+              <p>Followers</p>
+            </div>
+            
+            <div class="follower-increment">
+              <img src="/images/icon-up.svg" alt="up">
+              <p>99 Today</p>
+            </div>
+          </div>
+        </div>
 
-  @nathanf
-  1044
-  Followers
-  99 Today
+        <div id="ig-follower">
+          <div class="socials">
+            <div class="account">
+              <img src="/images/icon-instagram.svg" alt="instagram">
+              <p>@realnathanf</p>
+            </div>
+            <div class="followers">
+              <h1>11k</h1>
+              <p>Followers</p>
+            </div>
+            
+            <div class="follower-increment">
+              <img src="/images/icon-up.svg" alt="up">
+              <p>1099 Today</p>
+            </div>
+          </div>
+        </div>
 
-  @realnathanf
-  11k
-  Followers
-  1099 Today
 
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+        <div id="yt-follower">
+          <div class="socials">
+            <div class="account">
+              <img src="/images/icon-youtube.svg" alt="youtube">
+              <p>Nathan F.</p>
+            </div>
+            <div class="followers">
+              <h1>8239</h1>
+              <p>Subscribers</p>
+            </div>
+            
+            <div class="follower-increment">
+              <img src="/images/icon-down.svg" alt="down">
+              <p>144 Today</p>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </div>
+  </main>
 
 
 

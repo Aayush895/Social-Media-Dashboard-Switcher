@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+:root {
+  --Lime-Green: hsl(163, 72%, 41%);
+  --Bright-Red: hsl(356, 69%, 56%);
+  --Facebook: hsl(208, 92%, 53%);
+  --Twitter: hsl(203, 89%, 53%);
+  --Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+  --YouTube: hsl(348, 97%, 39%);
+  --Toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+  --light-toggle: hsl(230, 22%, 74%);
+  --White: hsl(0, 0%, 100%);
+  --Very-Pale-Blue: hsl(225, 100%, 98%);
+  --Light-Grayish-Blue: hsl(227, 47%, 96%);
+  --Dark-Grayish-Blue: hsl(228, 12%, 44%);
+  --Very-Dark-Blue: hsl(230, 17%, 14%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+}
+
+#media-container {
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header-content > p {
+  color: var(--Dark-Grayish-Blue);
+}
+
+#followers-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#fb-follower, #x-follower, #ig-follower, #yt-follower  {
+  border-top: 3px solid;
+  margin: 2rem 0rem;
+  padding: 1.5rem 3.5rem;
+  background-color: var(--Very-Pale-Blue);
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+#fb-follower:hover, #x-follower:hover, #ig-follower:hover, #yt-follower:hover {
+  background-color: var(--light-toggle);
+}
+
+#fb-follower {
+  border-color: var(--Facebook);
+}
+
+#x-follower {
+  border-color: var(--Twitter);
+}
+
+#ig-follower {
+  border-color: var(--Bright-Red);
+}
+
+#yt-follower {
+  border-color: var(--YouTube);
+}
+
+.account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.account > p {
+  margin-left: 0.35rem;
+  color: var(--Dark-Grayish-Blue);
+}
+
+.followers {
+  margin-top: 3rem;
+}
+
+.followers > h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.followers > p {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  margin-bottom: 3rem;
+  color: var(--Dark-Grayish-Blue);
+}
+
+.follower-increment {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.follower-increment > p {
+  margin-left: 0.3rem;
+  color: var(--Lime-Green);
+}
+
+#yt-follower .follower-increment > p {
+  color: var(--Bright-Red);
+}
