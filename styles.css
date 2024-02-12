@@ -31,7 +31,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid;
 }
 
 #media-container {
@@ -126,4 +125,46 @@ header {
 
 #yt-follower .follower-increment > p {
   color: var(--Bright-Red);
+}
+
+#overview-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid;
+}
+
+.header-container {
+  text-align: left;
+}
+
+#overviews {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  grid-gap: 2rem;
+}
+
+.overview {
+  border: 1px solid;
+  padding: 2.5rem 3rem;
+  background-color: var(--Light-Grayish-Blue);
+}
+
+.overview > .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.overview > .stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.overview > .stats > div {
+  display: flex;
+  align-items: center;
 }
